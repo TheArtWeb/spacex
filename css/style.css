@@ -1,0 +1,254 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #010001;
+    color: #fff;
+    margin: 0;
+    padding-top: 53px;
+    
+}
+
+.header {
+    max-width: 1230px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+}
+
+.item-link {
+    color: #FFFFFF ;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.secondary-nav .item-link {
+    color: #808080;
+}
+
+.main {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 26px;
+    margin-top: 0;
+}
+
+.discription {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 268px;
+    margin: auto;
+}
+
+.discription::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.video {
+    height: 750px;
+    max-width: 1230px;
+    margin: auto;
+    width: 90%;
+}
+
+.features {
+    position: relative;
+    max-width: 1230px;
+    margin: auto;
+    width: 90%;
+    padding-top: 300px;
+}
+
+.features-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.table {
+    margin-bottom: 200px;
+}
+
+.table-column {
+    width: 300px;
+    padding: 7px 0px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 179.69%;
+}
+
+.column-value {
+    color: #B2B0B2;
+}
+
+.features-text {
+    margin-top: 45px;
+    max-width: 490px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.rocket {
+    max-height: 1718px;
+    max-width: 644px;
+    top: 100px;
+    right: 0px;
+    position: absolute;
+    z-index: 99;
+}
+
+.footer {
+    margin-top: 500px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.footer-nav {
+    margin: 42px 0px 28px 0px;
+}
+
+.footer-nav .item {
+    font-style: normal;
+    font-weight: normal;
+    margin: 0px 10px;
+}
+
+.footer-text, .footer-email {
+    color: #808080;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.button {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: normal;
+    padding: 20px 85px;
+}
+
+/* adaptivity */
+@media (max-width: 960px) {
+    .rocket {
+        max-width: 200px;
+    }
+    .table-column {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .logo {
+        margin-bottom: 20px;
+    }
+    .header .main-nav{
+        margin-bottom: 15px;
+    }
+    .video {
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+    }
+    .features-title {
+        margin-top: 150px;
+    }
+    .footer {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .features {
+        padding-top: 0;
+    }
+    .rocket {
+        position: static;
+        max-height: 600px;  
+        display: block;
+        margin: auto;
+    }
+    .table {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .features-title {
+        text-align: center;
+    }
+
+    .features-text {
+        margin: auto;
+   
+    }
+    .table-column {
+        font-size: 14px;
+        width: 150px;
+    }
+    .footer {
+        margin-top: 165px;
+        padding-bottom: 50px;
+    }
+    .footer-nav .list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-nav .item {
+        margin-bottom: 10px;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .main {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 320px) {
+    .table {
+        font-size: 12px;
+        ;
+    }
+
+}
